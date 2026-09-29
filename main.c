@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
-    int year;
 
-    printf("input the year: ");
-    scanf("%i", &year);
+    int sec;
 
-    printf("is the year %i a leap year? : %i\n", year, ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0));
+    printf("input a second : ");
+    scanf("%i", &sec);
+
+    printf("The time is : %i:%i:%i\n", sec/3600, (sec%3600)/60, sec%60);
 
     return 0;
+
 }
